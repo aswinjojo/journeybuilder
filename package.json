@@ -1,0 +1,16 @@
+{
+  "name": "journey-builder",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Journey Builder monorepo – React frontend + Avantos mock server backend",
+  "scripts": {
+    "dev": "concurrently --names \"frontend,backend\" --prefix-colors \"cyan,yellow\" \"npm run dev --prefix frontend\" \"npm start --prefix backend\"",
+    "install:all": "npm install --prefix frontend && npm install --prefix backend",
+    "test": "npm test --prefix frontend",
+    "test:coverage": "npm run test:coverage --prefix frontend",
+    "build": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
