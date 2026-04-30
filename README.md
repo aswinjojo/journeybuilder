@@ -57,4 +57,4 @@ added without modifying existing code. See `frontend/README.md` for details.
 | **State** | `useState` in `App`; no global store needed for this scope |
 | **Extensibility** | `DataSource` interface + `DataSourceRegistry` singleton — new sources registered at startup, zero coupling to UI |
 | **DAG traversal** | Iterative BFS to avoid stack overflow on deep graphs; deduplicates nodes seen via multiple paths |
-| **Testing** | Vitest + Testing Library; 43 tests across 6 files covering logic and component interactions |
+| **Testing** | Vitest + Testing Library; 44 tests across 6 files covering logic and component interactions |

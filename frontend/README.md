@@ -29,7 +29,7 @@ npm run test:watch       # watch mode
 npm run test:coverage    # coverage report
 ```
 
-43 unit + component tests across 6 test files:
+44 unit + component tests across 6 test files:
 
 | File | What's tested |
 |------|---------------|
@@ -56,7 +56,7 @@ src/
 │   ├── DataSourceRegistry.ts      # plugin registry (singleton)
 │   ├── registerDataSources.ts     # startup wiring of built-in sources
 │   └── dataSources/
-│       ├── FormFieldsDataSource.ts   # upstream form fields (direct + transitive)
+│       ├── FormFieldsDataSource.ts   # upstream form fields; used internally by usePrefillSources (not registered globally)
 │       └── GlobalDataSource.ts       # Action & Org properties
 ├── hooks/
 │   ├── useBlueprintGraph.ts       # data-fetching hook
